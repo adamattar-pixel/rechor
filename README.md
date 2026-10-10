@@ -72,8 +72,6 @@ The generated data and the GTFS cache are not versioned (see `.gitignore`), so r
 
 The converter itself (`GtfsConverter`) is vendored in `tools/gtfs-converter/` and compiled on the fly by the scripts.
 
-> Note: the `ch.epfl.rechor.timetable` package (readers for the binary timetable files) is not included in this repository, so the application cannot be built from this repo alone.
-
 ## Real-time data
 
 Real-time updates are out of scope: they would require major changes to the architecture. Instead, re-run the two scripts above regularly to refresh the timetable.
