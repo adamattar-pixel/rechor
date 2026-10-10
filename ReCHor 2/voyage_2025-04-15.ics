@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ReCHor
+BEGIN:VEVENT
+UID:bd065b0e-5b89-4ff8-9c5c-b7724bbfccc5
+DTSTAMP:20250511T145824
+DTSTART:20250415T161300
+DTEND:20250415T175700
+SUMMARY:Ecublens VD, EPFL → Gruyères
+DESCRIPTION:16h13 Ecublens VD, EPFL → Renens VD, gare (arr. 16h19)\ntrajet 
+ à pied (3 min)\n16h26 Renens VD (voie 4) → Lausanne (arr. 16h33 voie 5)\nc
+ hangement (5 min)\n16h40 Lausanne (voie 1) → Romont FR (arr. 17h13 voie 2)
+ \nchangement (3 min)\n17h22 Romont FR (voie 1) → Bulle (arr. 17h41 voie 2)
+ \nchangement (3 min)\n17h50 Bulle (voie 4) → Gruyères (arr. 17h57 voie 2)
+END:VEVENT
+END:VCALENDAR
