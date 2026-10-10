@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 #
 # Convert GTFS data into ReCHor's binary timetable format and drop the
-# result straight into "ReCHor 2/timetable", for a given week.
+# result straight into "timetable", for a given week.
 #
-# Portable rewrite of the zsh/argc "pack-timetable.sh" script attached by
-# M. Schinz (see "To DO/Re_ Finir le project PPOO (Rechor).msg"). Differences
-# from the original:
+# Portable rewrite of the zsh/argc "pack-timetable.sh" script originally
+# attached by M. Schinz. Differences from the original:
 #   - no dependency on zsh, argc, or BSD `date -j` (runs under Git Bash)
 #   - compiles GtfsConverter from source on demand instead of requiring a
 #     pre-built jar
-#   - writes directly into "ReCHor 2/timetable" instead of producing a zip
-#     archive, since that is the directory the app reads from locally
+#   - writes directly into "timetable" instead of producing a zip archive,
+#     since that is the directory the app reads from locally
 #
 # Usage: scripts/update-timetable.sh <gtfs_zip> <first_day YYYY-MM-DD>
 #
@@ -31,7 +30,7 @@ first_day=$2
 
 script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 converter_dir="${script_dir}/../tools/gtfs-converter"
-timetable_dir="${script_dir}/../ReCHor 2/timetable"
+timetable_dir="${script_dir}/../timetable"
 classes_dir="${converter_dir}/build/classes"
 lib_jar="${converter_dir}/lib/fastcsv-3.4.0.jar"
 

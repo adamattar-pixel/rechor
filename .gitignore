@@ -1,10 +1,10 @@
 # Generated timetable data (regenerate with scripts/fetch-gtfs.sh +
 # scripts/update-timetable.sh, see README.md)
-ReCHor 2/timetable/
+timetable/
 data/gtfs-cache/
 
 # Build / IDE output
-ReCHor 2/out/
+out/
 tools/gtfs-converter/build/
 *.class
 .idea/
@@ -12,11 +12,7 @@ tools/gtfs-converter/build/
 
 # Large debug/profiling dumps
 profile_*.txt
+testProfile
 
 # OS cruft
 .DS_Store
-
-# Raw inbox drop (contains a professor's private email); its relevant
-# content has been folded into tools/gtfs-converter, scripts/, and
-# README.md instead of being published here.
-To DO/
